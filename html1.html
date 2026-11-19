@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LearnHub</title>
+    <link rel="stylesheet" href="ca2.css">
+</head>
+<body>
+
+    <header>
+        <h1>LearnHub</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#profile">Profile</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Online Learning Management System</h2>
+        <p>Learn new skills and improve your knowledge.</p>
+        <a href="#courses">Explore Courses</a>
+    </section>
+
+    <section>
+        <h2>Search Courses</h2>
+        <input type="text" id="search" placeholder="Search course">
+    </section>
+
+    <section>
+        <h2>Course Categories</h2>
+        <p>Programming | Web Development | Cyber Security</p>
+        <p>AI & Machine Learning | Database</p>
+    </section>
+
+    <section id="courses">
+        <h2>Available Courses</h2>
+
+        <div class="course">
+            <h3>Python Programming</h3>
+            <p>Learn Python basics and functions.</p>
+            <button onclick="enroll('Python Programming')">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <h3>HTML & Web Development</h3>
+            <p>Learn HTML, forms and tables.</p>
+            <button onclick="enroll('HTML & Web Development')">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <h3>Cyber Security</h3>
+            <p>Learn about online security.</p>
+            <button onclick="enroll('Cyber Security')">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <h3>Database Management</h3>
+            <p>Learn SQL and database concepts.</p>
+            <button onclick="enroll('Database Management')">Enroll Now</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Learning Progress</h2>
+
+        <p>Python Programming - 70%</p>
+        <progress value="70" max="100"></progress>
+
+        <p>HTML - 45%</p>
+        <progress value="45" max="100"></progress>
+    </section>
+
+    <section>
+        <h2>User Registration</h2>
+
+        <form id="registerForm">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Create password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>User Login</h2>
+
+        <form id="loginForm">
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="profile">
+        <h2>Student Profile</h2>
+
+        <p>Name: Student Name</p>
+        <p>Email: student@example.com</p>
+        <p>Courses Enrolled: <span id="total">0</span></p>
+        <p>Learning Status: Active</p>
+    </section>
+
+    <section>
+        <h2>Comments & Feedback</h2>
+
+        <form id="feedbackForm">
+            <label>Your Name</label>
+            <input type="text" required>
+
+            <label>Your Feedback</label>
+            <textarea required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Admin Management</h2>
+        <ul>
+            <li>Manage Students</li>
+            <li>Manage Instructors</li>
+            <li>Create New Courses</li>
+            <li>Update Course Content</li>
+            <li>View Student Progress</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Notifications</h2>
+        <p>New Python course has been added.</p>
+        <p>Your HTML course progress is 45%.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 LearnHub</p>
+        <p>Learn | Practice | Progress</p>
+    </footer>
+
+    <script src="ca2.js"></script>
+
+</body>
+</html>
